@@ -12,7 +12,7 @@ wordcount = 0
 totallength = 0
 longest = 0
 
-f = open("NevekNoiBehindTheName.txt", "r", encoding="utf-8")
+f = open("input.txt", "r", encoding="utf-8")
 namelistb = f.read()
 namelistb = namelistb.lower()
 namelist = namelistb.splitlines()
