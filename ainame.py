@@ -12,7 +12,7 @@ wordcount = 0
 totallength = 0
 longest = 0
 
-f = open("input.txt", "r", encoding="utf-8")
+f = open("NevekSzazAngolFerfi.txt", "r", encoding="utf-8")
 namelistb = f.read()
 namelistb = namelistb.lower()
 namelist = namelistb.splitlines()
@@ -98,7 +98,7 @@ namelistexisting = []
 for i in range(no):
     name = generateName(comblist, combfreq)
     name2 = ";" + name.lower() + ";"
-    while (name2 in namelist) or (name2 in namelistoutput):
+    while (name2 in namelist) or (name in namelistoutput):
         namelistexisting.append(name)
         name = generateName(comblist, combfreq)
         name2 = ";" + name.lower() + ";"        
